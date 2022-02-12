@@ -20,6 +20,14 @@ const users = [
     "userName" : 'Karim',
     "password" : "112233",
   },
+  {
+    "userName" : 'user',
+    "password" : "123",
+  },
+  {
+    "userName" : 'User',
+    "password" : "123",
+  },
 ]
 
 
