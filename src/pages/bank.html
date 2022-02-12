@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matir Bank</title>
+
+   <!-- tailwind css link  -->
+   <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+
+   <!-- custom css link  -->
+   <link rel="stylesheet" href="../../style/style.css">
+  
+  <style>
+    h1 {
+      text-align: center;
+      color: coral;
+    }
+  </style>
+<body class="bg-indigo-100">
+  <header>
+    <nav class="flex justify-center bg-blue-200 py-1">
+      <div class="flex justify-between w-3/4 px-3">
+        <span class="user-profile order-2">
+          <img src="../../asset/images/man1-profile.png" alt="" class="w-10 rounded-full">
+        </span>
+        
+        <span class="logo flex items-center order-1">
+          <h3 class="bank-name font-bold"> Matir <span class="text-orange-600">Bank</span> </h3>
+        </span>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="flex justify-center mt-16">
+      <div class="text-center">
+        <p class="text-purple-900">Your balance</p>
+        <h4 class="text-xl font-bold">
+          <span>$</span>
+          <span class="" id="balance-display">7896</span>
+        </h4>
+      </div>
+    </section>
+
+    <section class="w-screen flex justify-center mt-10">
+      <div class="w-3/4 flex justify-center">
+        <div class="form-control flex flex-col relative mb-5 mx-2">
+          <label for="deposit" class="font-bold text-fuchsia-600">Deposit Amount</label>
+          <input type="text" name="" class="max-w-xs" id="deposit-input" placeholder="$ deposit amount">
+          <p class="error-msg text-size-custom absolute top-custom ml-3 text-red-500 hidden" id="deposit-error-msg">error</p>
+          <span class="mt-4 self-center">
+            <button class="bg-fuchsia-600 text-indigo-100 px-4 py-2 rounded-full" id="deposit-btn">Deposit</button>
+          </span>
+        </div>
+
+        <div class="form-control flex flex-col relative mb-5 mx-2">
+          <label for="deposit" class="font-bold text-violet-500">Withdraw Amount</label>
+          <input type="text" name="" class="max-w-xs" id="withdraw-input" placeholder="$ withdraw amount">
+          <p class="error-msg text-size-custom absolute top-custom ml-3 text-red-500 hidden" id="withdraw-error-msg">error</p>
+          <span class="mt-4 self-center">
+            <button class="bg-violet-500 text-indigo-100 px-4 py-2 rounded-full" id="withdraw-btn">Withdraw</button>
+          </span>
+        </div>
+        
+      </div>
+      
+    </section>
+
+    <section class="w-screen mt-10 mb-5 flex justify-center ">
+      <div class="flex flex-col items-center">
+          <h4 class="font-bold">Transaction History</h4>
+          <div  class="bg-orange-400 mt-3">
+            <h6 class="px-16 pt-3 font-bold text-xs border-b-4 border-b-lime-500 text-white text-center">Transaction</h6>
+            <div id='transaction-history' class="text-center bg-scroll mt-4 p-2 text-sm max-h-72 overflow-y-auto text-black">
+              <!-- append will hear -->
+            </div>
+          </div>
+        
+      </div>
+    </section>
+  </main>
+
+  <script src="../../app/js/banking.js"></script>
+</body>
+</html>

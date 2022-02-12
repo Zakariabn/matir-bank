@@ -1,0 +1,34 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.top-custom {
+  top: 62px;
+}
+.text-size-custom {
+  font-size: 13px;
+}
+
+/* scroll design */
+#transaction-history::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+#transaction-history::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(209, 114, 6);
+  border-radius: 10px;
+}

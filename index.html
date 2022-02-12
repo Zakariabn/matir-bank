@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <!-- tailwind css link  -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+  
+</head>
+<body class="w-screen h-screen flex flex-col justify-center items-center  bg-blue-300">
+  <header>
+    
+  </header>
+
+  <main>
+    <section class="flex justify-center  text-center">
+      <div class="bg-orange-300 p-5 rounded-xl">
+
+        <div action="" >
+          <h1 class="text-3xl font-bold">Login</h1>
+
+          <div class="form-control flex flex-col my-5">
+            <label for="user name" class="text-lg font-bold">User name</label>
+            <input type="text" name="username" id="username-input" required>
+          </div>
+
+          <div class="form-control flex flex-col">
+            <label for="password" class="text-lg font-bold">Password</label>
+            <input type="password" name="password" id="password-input" required>
+          </div>
+
+          <button  class="bg-indigo-50 px-4 py-2 mt-5 font-semibold rounded-full text-gray-600" id="submit-btn">Submit</button>
+
+        </div>
+      </div>
+    </section>
+ 
+     
+
+    <!-- <section class="test">
+      <div class="w-16 h-16 m-5 bg-black"></div>
+      <div class="w-16 h-16 m-5 bg-black"></div>
+      <div class="bg-blue-300"> hello</div>
+    </section> -->
+
+
+  </main>
+
+  <script src="./app/js/data.js"></script>
+  <script src="./app/js/script.js"></script>
+</body>
+</html>
